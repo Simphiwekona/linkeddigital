@@ -1,7 +1,8 @@
 .navbar {
     display: flex;
     align-items: center;
-    background-color: lightgrey;
+    background: url("./../../../asset/bg.jpg");
+    color: #fff;
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
@@ -25,18 +26,20 @@
   
   .nav-link {
     text-decoration: none;
-    color: black;
+    color: #fff;
     font-size: 1.2rem;
   }
   
   .nav-link:hover {
     text-decoration: underline;
+    color: aqua;
   }
   
   .btn-logout {
-    background-color: blue;
+    background-color: transparent;
     color: white;
-    border: none;
+    border: 2px solid white;
+    border-radius: 10px;
     padding: 10px 20px;
     font-size: 1rem;
     cursor: pointer;
@@ -44,6 +47,8 @@
   }
   
   .btn-logout:hover {
-    background-color: darkblue;
+    background-color: #fff;
+    border: 2px solid #000000;
+    color: #000000;
   }
   

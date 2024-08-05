@@ -1,4 +1,127 @@
-<app-navbar />
+<app-navbar></app-navbar>
 
+<main>
+    <section id="hero">
+        <div class="hero-section">
+            <div class="image-grid">
+                <img src="https://via.placeholder.com/600x400" alt="image" />
+            </div>
+            <div class="text-grid">
+                <p>Your only stop for tech parts</p>
+                <h1>Amazing deals!</h1>
+                <div class="button-container">
+                    <button class="contact-btn">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<app-footer />
+    <!-- NEED HELP SECTION -->
+    <section id="needhelp">
+        <div class="grid-container-wrapper">
+            <h1 class="grid-header">Need Help?</h1>
+            <div class="three-column-grid">
+                <div class="grid-element">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel justo vel est fermentum facilisis.</p>
+                </div>
+                <div class="grid-element">
+                    <p>Phasellus at nisi hendrerit, tincidunt sapien sit amet, pellentesque tortor. Suspendisse ut arcu at urna.</p>
+                </div>
+                <div class="grid-element">
+                    <p>Mauris id libero id urna commodo venenatis in a libero. Nulla facilisi. Fusce vel ex enim.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RANGE SECTION -->
+    <section id="range">
+        <div class="range-container">
+            <h1 class="range-heading">Our Range</h1>
+            <div class="range-grid">
+                <div class="range-item">
+                    <img src="https://via.placeholder.com/200" alt="Product" />
+                    <p>Product One</p>
+                </div>
+                <div class="range-item">
+                    <img src="https://via.placeholder.com/200" alt="Product" />
+                    <p>Product Two</p>
+                </div>
+                <div class="range-item">
+                    <img src="https://via.placeholder.com/200" alt="Product" />
+                    <p>Product Three</p>
+                </div>
+                <div class="range-item">
+                    <img src="https://via.placeholder.com/200" alt="Product" />
+                    <p>Product Four</p>
+                </div>
+                <div class="range-item">
+                    <img src="https://via.placeholder.com/200" alt="Product" />
+                    <p>Product Five</p>
+                </div>
+                <div class="range-item">
+                    <img src="https://via.placeholder.com/200" alt="Product" />
+                    <p>Product Six</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEW SECTION -->
+    <section id="review">
+        <div class="review-section">
+            <div class="review-carousel">
+                <button class="carousel-button prev-button" >&#8249;</button>
+                <!-- (click)="handlePrevClick()" -->
+                <div class="carousel-container">
+                    <div class="carousel-item active">
+                        <p class="review-text">"Amazing!"</p>
+                        <p class="review-author">- John Doe</p>
+                        <div class="rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="review-text">"Great service!"</p>
+                        <p class="review-author">- Jane Smith</p>
+                        <div class="rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9734;</span>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="review-text">"Highly recommended!"</p>
+                        <p class="review-author">- Alice Johnson</p>
+                        <div class="rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9734;</span>
+                            <span class="star">&#9734;</span>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="review-text">"Will buy again!"</p>
+                        <p class="review-author">- Robert Brown</p>
+                        <div class="rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9734;</span>
+                            <span class="star">&#9734;</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-button next-button">&#8250;</button>
+                <!--  (click)="handleNextClick()" -->
+            </div>
+        </div>
+    </section>
+</main>

@@ -4,12 +4,14 @@ import { HomeComponent } from './components/home/home.component';
 import { AdminGuard, AuthGuard } from './guard/auth.guard';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { NgModule } from '@angular/core';
+import { UserDashboardComponent } from './components/user-dashboard/user-dashboard.component';
 
 export const routes: Routes = [
+    { path: 'home', component: HomeComponent},
     { path: 'login', component: LoginComponent},
-    { path: 'home', component: HomeComponent, canActivate: [AuthGuard]},
+    { path: 'userDashboard', component: UserDashboardComponent, canActivate: [AuthGuard]},
     { path: 'dashboard', component: DashboardComponent, canActivate: [AdminGuard]},
-    { path: '', redirectTo: '/login', pathMatch: 'full'},
+    { path: '', redirectTo: '/home', pathMatch: 'full'},
 ];
 
 @NgModule({
