@@ -1,10 +1,11 @@
 .user-table {
     width: 150%;
-    border: 1px solid white;
+    background-color: #fff;
+    box-shadow: 7px 7px 15px;
     border-radius: 20px;
     padding: 20px;
     margin: 10px;
-    color: #ffff;
+    color: #000;
   }
   .user-table table {
     width: 100%;
@@ -19,11 +20,11 @@
   
   .user-table th {
     background-color: rgba(255, 255, 255, 0.2);
-    color: white;
+    color: #000;
   }
   
   .user-table td {
-    color: white;
+    color: #000;
   }
   
   .user-table tr:hover {
