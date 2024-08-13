@@ -1,4 +1,16 @@
+
+
 <div class="user-table">
+  <div class="toolbar">
+    <input
+      type="text"
+      placeholder="Search users..."
+      class="search-bar"
+      (input)="onSearch($event)"
+    />
+    <button class="new-user-btn" (click)="onAddUser()">New User</button>
+  </div>
+  
   <table>
     <thead>
       <tr>
@@ -22,7 +34,7 @@
             <mat-icon>more_vert</mat-icon>
           </button>
           <mat-menu #actionMenu="matMenu">
-            <button mat-menu-item class="action-btn">Create Quotation</button>
+            <button mat-menu-item class="action-btn" (click)="onCreateQuote(user.id)">Create Quotation</button>
             <button mat-menu-item class="action-btn">View Quotation</button>
             <button mat-menu-item class="action-btn">View Info</button>
             <button mat-menu-item class="action-btn">Suspend User</button>

@@ -1,0 +1,89 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+  <div class="user-section">
+    <div class="title">
+      <h2>User Information</h2>
+    </div>
+    <form >
+      <div class="form-column">
+        <div class="form-group">
+          <!-- <label for="name">Name :</label> -->
+          <input type="text" class="form-control" [value]="selectedUser?.name" readonly/>
+        </div>
+        <div class="form-group">
+          <!-- <label for="name">Last Name :</label> -->
+          <input type="text" class="form-control" [value]="selectedUser?.lastName" readonly/>
+        </div>
+        <div class="form-group">
+          <!-- <label for="name">Email :</label> -->
+          <input type="text" class="form-control" [value]="selectedUser?.userName" readonly/>
+        </div>
+        <div class="form-group">
+          <!-- <label for="name">Phone :</label> -->
+          <input type="text" class="form-control" [value]="selectedUser?.phone" readonly/>
+        </div>
+      </div>
+      <div class="form-column">
+        <div class="form-group">
+          <!-- <label for="name">Customer Number :</label> -->
+          <input type="text" class="form-control" [value]="selectedUser?.customerNumber" readonly/>
+        </div>
+        <div class="form-group">
+          <!-- <label for="name">Location :</label> -->
+          <input type="text" class="form-control" [value]="selectedUser?.location" readonly/>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="description-section">
+    <div class="title">
+      <h2>Quote Description</h2>
+    </div>
+    <button class="primary-btn" (click)="onOpenItemDescriptionForm()">Add Item</button>
+
+    <table class="table table-striped table-hover">
+      <thead>
+        <tr>
+          <th>Quatity</th>
+          <th>Description</th>
+          <th>Unit Price</th>
+          <th>Total Price</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of items; let i = index">
+          <td>{{ item.quantity }}</td>
+          <td>{{ item.description }}</td>
+          <td>R {{ item.unitPrice }}</td>
+          <td>R {{ item.total }}</td>
+          <td>
+            <button>
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>`
+      </tbody>
+    </table>
+  </div>
+
+  <div class="summary-section">
+    <div class="form-group">
+      <label for="formDiscount">Discount (%)</label>
+      <input
+        type="number"
+        id="formDiscount"
+        class="form-control"
+        [(ngModel)]="discount"
+        (input)="handleDiscountChange($event)"
+      />
+    </div>
+    <p>Total Sum: R{{ calculateTotalSum() }}</p>
+    <p>Discounted Total: R{{ calculateDiscountTotal() }}</p>
+  </div>
+  <button class="primary-btn" (click)="handleSaveQuote()">Save Quote</button>
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,69 @@
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    max-height: 100%;
+}
+
+.title h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.user-section, .description-section, .summary-section {
+    margin-bottom: 30px;
+}
+form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+.form-column {
+    width: 48%;
+}
+
+.form-select, .form-control {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f4f4f4;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+.summary-section p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+#formDiscount {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}

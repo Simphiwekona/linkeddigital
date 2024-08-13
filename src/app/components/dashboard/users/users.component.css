@@ -1,3 +1,33 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  width: 80%;
+  font-size: 23px;
+  font-weight: bolder;
+  padding: 18px;
+  border: none;
+  border-radius: 10px;
+  background-color:  #ccc;
+}
+
+.new-user-btn {
+  padding: 16px 36px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.new-user-btn:hover {
+  background-color: #0056b3;
+}
 .user-table {
     width: 150%;
     background-color: #fff;

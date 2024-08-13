@@ -3,7 +3,10 @@ export const DUMMY_USERS = [
         "id": "1",
         "userName": "admin@mail.com",
         "password": "password1",
-        "role": "admin"
+        "role": "admin",
+        "location": "New York",
+        "phone": "555-1234",
+        "customerNumber": "CUST001"
     },
     {
         "id": "2",
@@ -12,7 +15,10 @@ export const DUMMY_USERS = [
         "userName": "user@mail.com",
         "password": "password2",
         "status": "Active",
-        "role": "user"
+        "role": "user",
+        "location": "Los Angeles",
+        "phone": "555-5678",
+        "customerNumber": "CUST002"
     },
     {
         "id": "3",
@@ -21,7 +27,10 @@ export const DUMMY_USERS = [
         "userName": "larry@mail.com",
         "password": "password3",
         "status": "Pending",
-        "role": "client"
+        "role": "client",
+        "location": "Chicago",
+        "phone": "555-8765",
+        "customerNumber": "CUST003"
     },
     {
         "id": "4",
@@ -30,7 +39,10 @@ export const DUMMY_USERS = [
         "userName": "burnett@mail.com",
         "password": "password4",
         "status": "Inactive",
-        "role": "client"
+        "role": "client",
+        "location": "Houston",
+        "phone": "555-4321",
+        "customerNumber": "CUST004"
     },
     {
         "id": "5",
@@ -39,7 +51,10 @@ export const DUMMY_USERS = [
         "userName": "john.doe@mail.com",
         "password": "password5",
         "status": "Active",
-        "role": "user"
+        "role": "user",
+        "location": "Phoenix",
+        "phone": "555-1111",
+        "customerNumber": "CUST005"
     },
     {
         "id": "6",
@@ -48,7 +63,10 @@ export const DUMMY_USERS = [
         "userName": "jane.smith@mail.com",
         "password": "password6",
         "status": "Active",
-        "role": "client"
+        "role": "client",
+        "location": "Philadelphia",
+        "phone": "555-2222",
+        "customerNumber": "CUST006"
     },
     {
         "id": "7",
@@ -57,7 +75,10 @@ export const DUMMY_USERS = [
         "userName": "alice.johnson@mail.com",
         "password": "password7",
         "status": "Pending",
-        "role": "client"
+        "role": "client",
+        "location": "San Antonio",
+        "phone": "555-3333",
+        "customerNumber": "CUST007"
     },
     {
         "id": "8",
@@ -66,7 +87,10 @@ export const DUMMY_USERS = [
         "userName": "bob.brown@mail.com",
         "password": "password8",
         "status": "Inactive",
-        "role": "user"
+        "role": "user",
+        "location": "San Diego",
+        "phone": "555-4444",
+        "customerNumber": "CUST008"
     },
     {
         "id": "9",
@@ -75,7 +99,10 @@ export const DUMMY_USERS = [
         "userName": "charlie.davis@mail.com",
         "password": "password9",
         "status": "Active",
-        "role": "admin"
+        "role": "admin",
+        "location": "Dallas",
+        "phone": "555-5555",
+        "customerNumber": "CUST009"
     },
     {
         "id": "10",
@@ -84,7 +111,10 @@ export const DUMMY_USERS = [
         "userName": "emily.wilson@mail.com",
         "password": "password10",
         "status": "Active",
-        "role": "client"
+        "role": "client",
+        "location": "San Jose",
+        "phone": "555-6666",
+        "customerNumber": "CUST010"
     },
     {
         "id": "11",
@@ -93,7 +123,10 @@ export const DUMMY_USERS = [
         "userName": "frank.clark@mail.com",
         "password": "password11",
         "status": "Pending",
-        "role": "client"
+        "role": "client",
+        "location": "Austin",
+        "phone": "555-7777",
+        "customerNumber": "CUST011"
     },
     {
         "id": "12",
@@ -102,7 +135,10 @@ export const DUMMY_USERS = [
         "userName": "grace.lee@mail.com",
         "password": "password12",
         "status": "Inactive",
-        "role": "user"
+        "role": "user",
+        "location": "Jacksonville",
+        "phone": "555-8888",
+        "customerNumber": "CUST012"
     },
     {
         "id": "13",
@@ -111,7 +147,10 @@ export const DUMMY_USERS = [
         "userName": "henry.walker@mail.com",
         "password": "password13",
         "status": "Active",
-        "role": "user"
+        "role": "user",
+        "location": "Fort Worth",
+        "phone": "555-9999",
+        "customerNumber": "CUST013"
     },
     {
         "id": "14",
@@ -120,6 +159,9 @@ export const DUMMY_USERS = [
         "userName": "ivy.hall@mail.com",
         "password": "password14",
         "status": "Active",
-        "role": "client"
+        "role": "client",
+        "location": "Columbus",
+        "phone": "555-0000",
+        "customerNumber": "CUST014"
     }
-]
+];

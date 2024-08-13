@@ -2,3 +2,36 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background: url("./asset/bg2.jpg"); }
+
+.modal-container1 {
+    background-color: #fff !important;
+    color: #000; /* Optional: To ensure the text color is readable */
+}
+
+::ng-deep .mat-dialog-container {
+    background-color: #fff !important;
+    color: #000; /* Optional: To ensure the text color is readable */
+}
+.primary-btn {
+    background-color: #0d0e7d;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+.danger-btn {
+    background-color: #7d0d0d;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+.primary-btn:hover {
+    background-color: #0a0b64;
+}

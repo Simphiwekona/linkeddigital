@@ -1,0 +1,13 @@
+::ng-deep .mat-dialog-container {
+    background-color: #fff !important;  /* Changes the background color to white */
+    color: #000; /* Optional: Ensures the text color is black for readability */
+}
+mat-form-field {
+    width: 100%;
+}
+.no-align-right {
+    text-align: right;
+}
+input.no-align-right {
+    -moz-appearance: textfield;
+  }
