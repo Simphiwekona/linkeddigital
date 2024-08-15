@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { DUMMY_USERS } from '../../../dummy-users';
 import { CommonModule } from '@angular/common';
 import { MatMenuModule } from '@angular/material/menu';
@@ -17,15 +17,16 @@ import { Router } from '@angular/router';
   templateUrl: './users.component.html',
   styleUrl: './users.component.css'
 })
-export class UsersComponent {
-  // users: User[] = [];
-  users = DUMMY_USERS;
+export class UsersComponent implements OnInit {
+  users: User[] = [];
+  // users = DUMMY_USERS;
   searchTerm: string = '';
 
-  constructor(private dialog: MatDialog, private router: Router){
+  constructor(private dialog: MatDialog, 
+    private router: Router,
+    private userService: UsersService){
 
   }
-// private userService: UsersService
 
   onAddUser() {
     this.dialog.open(AdduserComponent, {
@@ -33,24 +34,33 @@ export class UsersComponent {
       height: '400px'
     });
   }
-  // ngOnInit(): void {
-  //   // this.userService.getAllUsers().subscribe((data) => {
-  //   //   this.users = data;
-  //   // })
-  // }
-
-  onSearch(event: any): void {
-    this.searchTerm = event.target.value.toLowerCase();
-    this.users = DUMMY_USERS.filter(user =>
-      user.name?.toLowerCase().includes(this.searchTerm) ||
-      user.lastName?.toLowerCase().includes(this.searchTerm) ||
-      user.userName.toLowerCase().includes(this.searchTerm) ||
-      user.status?.toLowerCase().includes(this.searchTerm) ||
-      user.role.toLowerCase().includes(this.searchTerm)
-    );
+  ngOnInit(): void {
+    this.fetchUsers();
   }
 
-  onCreateQuote(id:string){
+  onSearch(event: any): void {
+    // this.searchTerm = event.target.value.toLowerCase();
+    // this.users = DUMMY_USERS.filter(user =>
+    //   user.name?.toLowerCase().includes(this.searchTerm) ||
+    //   user.lastName?.toLowerCase().includes(this.searchTerm) ||
+    //   user.userName.toLowerCase().includes(this.searchTerm) ||
+    //   user.status?.toLowerCase().includes(this.searchTerm) ||
+    //   user.role.toLowerCase().includes(this.searchTerm)
+    // );
+  }
+
+  onCreateQuote(id:number){
       this.router.navigate(['/quotationForm', id])
+  }
+
+  fetchUsers(): void {
+    this.userService.getAllUsers().subscribe(
+      (data: User[]) => {
+        this.users = data;
+      },
+      (error) => {
+        console.error('Error fetching users:', error)
+      }
+    )
   }
 }

@@ -1,6 +1,7 @@
 <app-navbar></app-navbar>
 
 <div class="container">
+  <a href="/dashboard" class="back-btn">back</a>
   <div class="user-section">
     <div class="title">
       <h2>User Information</h2>
@@ -83,7 +84,7 @@
     <p>Total Sum: R{{ calculateTotalSum() }}</p>
     <p>Discounted Total: R{{ calculateDiscountTotal() }}</p>
   </div>
-  <button class="primary-btn" (click)="handleSaveQuote()">Save Quote</button>
+  <button class="primary-btn" (click)="onSubmit()">Save Quote</button>
 </div>
 
 <app-footer></app-footer>

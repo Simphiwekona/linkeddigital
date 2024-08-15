@@ -14,6 +14,6 @@ private apiUrl = environment.BASE_URL;
   constructor(private http: HttpClient) { }
 
   getAllUsers(): Observable<User[]>{
-    return this.http.get<User[]>(`${this.apiUrl}/all`)
+    return this.http.get<User[]>(`${this.apiUrl}/customer/all`)
   }
 }

@@ -6,7 +6,7 @@ import { DUMMY_USERS } from '../../../../dummy-users';
 import { CommonModule } from '@angular/common';
 import { MatDialog } from '@angular/material/dialog';
 import { ItemDescriptionComponent } from '../item-description/item-description.component';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { MatIcon } from '@angular/material/icon';
 
 @Component({
@@ -28,7 +28,7 @@ export class QuotationFormComponent {
 
   mockUserData = DUMMY_USERS;
 
-  constructor(private fb: FormBuilder, private dialog: MatDialog, private route: ActivatedRoute) {
+  constructor(private fb: FormBuilder, private dialog: MatDialog, private route: ActivatedRoute, private router: Router) {
     this.formData = this.fb.group({
       quatity: [''],
       description: [''],
@@ -101,6 +101,10 @@ dialogRef.afterClosed().subscribe(result => {
     } else {
       this.userData = null;
     }
+  }
+
+  onSubmit(){
+    this.router.navigate(['/quotation']);
   }
 
   handleSaveQuote() {

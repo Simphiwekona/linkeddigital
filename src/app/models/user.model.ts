@@ -6,4 +6,7 @@ export interface User {
     number: string;
     status: string;
     address: string;
+    postalCode: string;
+    customerNumber?: string;
+    dateCreate?: string;
 }

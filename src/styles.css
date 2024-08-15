@@ -1,7 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background: url("./asset/bg2.jpg"); }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+    
+    /* background: url("./asset/bg2.jpg"); */
+ }
 
 .modal-container1 {
     background-color: #fff !important;
@@ -35,3 +38,56 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background:
 .primary-btn:hover {
     background-color: #0a0b64;
 }
+.back-btn {
+    display: flex;
+}
+.back-btn a {
+    text-decoration: none;
+}
+.user-table {
+    width: 80%;
+    background-color: #fff;
+    box-shadow: 7px 7px 15px;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    color: #000;
+  }
+  .user-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .user-table th, .user-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid white;
+  }
+  
+  .user-table th {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #000;
+  }
+  
+  .user-table td {
+    color: #000;
+  }
+  
+  .user-table tr:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .user-table .action-btn {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .user-table .action-btn:hover {
+    background-color: white;
+    color: black;
+  }

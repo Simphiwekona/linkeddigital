@@ -30,9 +30,12 @@ form {
 .form-select, .form-control {
     width: 80%;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: none;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: bolder;
+    background-color: lightgray;
+    color: #282525;
 }
 
 .table {
